@@ -7,3 +7,9 @@
 # get_squares [25, 4, 9, 6, 50, 16, 5] # => [4, 5]
 
 # This time you will have to define the method, it's called: get_squares
+
+def get_squares(array)
+  arr2 = []
+  array.each { |num| arr2 << num if array.include?(num * num) }
+  return arr2.sort
+end
