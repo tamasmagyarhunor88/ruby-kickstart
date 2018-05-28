@@ -7,5 +7,7 @@
 
 class String
   def every_other_char
+    self_2 = self.split("")
+    return (self_2.values_at(* self_2.each_index.select { |i| i.even?})).join
   end
 end
